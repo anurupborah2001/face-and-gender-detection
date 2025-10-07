@@ -6,7 +6,11 @@ ppt
 **/*.jpg
 **/*.mp4
 **/__pycache__/
+**/*.pickle
+**/*.npz
 **/test_images/**
 **/model/backup/**
 **/data/backup/**
 .DS_Store
+*.pickle
+*.npz
