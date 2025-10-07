@@ -60,3 +60,6 @@ Generate graph to evaluate the Gamma, Co-efficient, Kernel
 # Prediction
 1. **Image Prediction:** Using a sample image, to detect the face and classify the gender.
 2. **Real Time Prediction:** Real-time video to detect the face and classify the gender.
+
+
+**NB:** Please note that the model files are not avaialble so in order to run need to train the model.
