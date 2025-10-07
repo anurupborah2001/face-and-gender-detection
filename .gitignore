@@ -14,3 +14,4 @@ ppt
 .DS_Store
 *.pickle
 *.npz
+data-pre-processing-training-model/data/data_images_100_100.pickle
