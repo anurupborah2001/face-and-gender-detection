@@ -6,12 +6,10 @@ ppt
 **/*.jpg
 **/*.mp4
 **/__pycache__/
-**/*.pickle
 **/*.npz
 **/test_images/**
 **/model/backup/**
 **/data/backup/**
 .DS_Store
-*.pickle
 *.npz
 data-pre-processing-training-model/data/data_images_100_100.pickle

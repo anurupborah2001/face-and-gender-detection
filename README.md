@@ -1,6 +1,6 @@
 # Face and Gender Detection
 
-### Training flow process : 
+### Training flow process :
 
 <img width="1152" height="307" alt="image" src="https://github.com/user-attachments/assets/2c76d830-58c6-4d7c-82d0-79e919fab974" />
 
@@ -14,7 +14,7 @@
   d. Label the images
 
 # Exploratory Data Analysis
-1. Distribution of Male and Female 
+1. Distribution of Male and Female
  - Bar Chart
  - Pie Chart
 2. What Distribution of size of all Images
@@ -25,7 +25,7 @@
 4. Remove the few images that are having very less size
 
 # Feature Extraction
-1. Using the save data model, create Eigen face  
+1. Using the save data model, create Eigen face
 [Eigen faces Research paper](https://sites.cs.ucsb.edu/~mturk/Papers/mturk-CVPR91.pdf)
 2. Finding the right number of components for Principal Component Analysis(PCA)
 3. Using Principal Component Analysis(PCA) to extract the features of the face
@@ -63,3 +63,32 @@ Generate graph to evaluate the Gamma, Co-efficient, Kernel
 
 
 **NB:** Please note that the model files are not avaialble so in order to run need to train the model.
+
+## Deploy the model to Heroku
+
+The deploy files will be in `deploy_app` folder
+
+The below are the steps to perform to deploy to Heroku:
+
+1. Deploying the app to heroku needs a library dependency named `gunicorn`. We need to run the below command to download the library:
+
+```bash
+!pip install gunicorn
+```
+
+2. Create a Proc file , which the Heroku app needs it
+
+```bash
+web: gunicorn main:app
+```
+
+Actually we cannot directly deploy any application that has dependency on OpenCV and these dependencies also need to be installed in the cloud server.For this we need to create another file names `Appfile` and inside this file we need to specify the kernel libraries that needed to be installed in the kernel binaries.
+
+The `Appfile` will contain the below libraries:
+
+```bash
+libsm6
+libxrender1
+libfontconfig1
+libice6
+```
