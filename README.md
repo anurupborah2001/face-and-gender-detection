@@ -64,7 +64,7 @@ Generate graph to evaluate the Gamma, Co-efficient, Kernel
 
 **NB:** Please note that the model files are not avaialble so in order to run need to train the model.
 
-## Deploy the model to Heroku
+## Deploy the model to [Heroku](https://www.heroku.com/)
 
 The deploy files will be in `deploy_app` folder
 
@@ -92,3 +92,7 @@ libxrender1
 libfontconfig1
 libice6
 ```
+
+## Deploy model to [Railway.app](https://railway.app/)
+
+We can also deploy to the railway app instead of Heroku app for free tier
